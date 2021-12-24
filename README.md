@@ -1,4 +1,5 @@
-Check the portfolio! 💼 - https://www.milipernia.com/
+Instagram: https://www.instagram.com/ynsmrtpc/
 
-A responsive portfolio created as a 3rd project for SheCodes 🧠💼
-Hosted with Netlify 
+Youtube: https://www.youtube.com/channel/UCZ6OonP_nBi0bYBZS75perw
+
+https://yunusemre-topcu.netlify.app/
