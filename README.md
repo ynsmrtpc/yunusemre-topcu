@@ -1,4 +1,4 @@
-Instagram: instagram.com/ynsmrtpc
+Instagram: https://www.instagram.com/ynsmrtpc/
 
 Youtube: https://www.youtube.com/channel/UCZ6OonP_nBi0bYBZS75perw
 
