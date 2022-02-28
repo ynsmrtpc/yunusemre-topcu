@@ -2918,7 +2918,10 @@ body.background-contact-me {
     height: fit-content;
 }
 
-div.background-main {
+
+/* div.background-main { */
+
+body {
     margin: -0.1rem 0 0 0;
     padding: 0;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -2981,12 +2984,10 @@ div.nav-font {
     color: var(--white) !important;
 }
 
-
-/* .nav-item {
-    padding-left: 250px;
-    padding-right: 250px;
-
-} */
+.nav-item {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
 
 img.icon {
     width: 300px;

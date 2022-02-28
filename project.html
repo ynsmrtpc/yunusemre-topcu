@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects - Yunus Emre Topçu</title>
-    <link rel="icon" type="image/jpg" href="/images/icon-2.PNG" />
+    <link rel="icon" type="image/jpg" href="/images/icon-2.jpeg" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,16 +26,8 @@
         animation: gradient 15s ease infinite;
     }
     
-    @keyframes gradient {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
+    .my-projects {
+        margin: 100px;
     }
     
     a {
@@ -63,6 +55,19 @@
         text-align: center;
     }
     
+    img {
+        width: 150px !important;
+        margin: 0 50px;
+    }
+    
+    .about-me {
+        position: absolute;
+        top: 130px;
+        left: 300px;
+        color: white;
+        padding: 0 20px;
+    }
+    
     .btn {
         color: #343434 !important;
         padding: 0 5px !important;
@@ -77,44 +82,63 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-color">
         <div class="container-fluid nav-font pt-1">
             <div class="col-2 d-none d-sm-none d-md-none d-lg-none d-xl-block"></div>
-            <div class="col-1 d-none d-sm-nonce d-md-none d-lg-block d-xl-none"></div>
+            <div class="col-1 d-none d-sm-none d-md-none d-lg-block d-xl-none"></div>
             <a class="navbar-brand col-2 nav-name" href="/index.html">
-          Yunus Emre Topçu</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span
-            class="navbar-toggler-icon position-relative justify-content-sm-end"
-          ></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav justify-content-center">
- 
-            </li>
+        Yunus Emre Topçu</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span
+          class="
+            navbar-toggler-icon
+            position-relative
+            justify-content-sm-end
+          "
+        ></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav justify-content-center">
 
-            <li style="padding: 0 100px;" class="nav-item">
-                <a class="nav-link active" href="/contact.html">Contact</a>
-            </li>
-            <li style="padding: 0 100px;" class="nav-item">
-                <a class="nav-link active" href="/index.html">
-                    < Back to the main page</a>
+          <li class="nav-item">
+            <a class="nav-link active" href="/contact.html"
+              >Contact</a
+            >
+          </li>
+
+          <li class="nav-item work-link d-none d-lg-block">
+            <a 
+            class="nav-link work-link-color" href="/index.html"
+              ><i class="fas fa-chevron-left pe-1"></i> Back to main page
+            </a>
             </li>
             </ul>
         </div>
         </div>
     </nav>
 
+    <div class="container">
+        <img class="img-fluid icon mt-4 " src="/images/icon-1.png" alt="Image of Me" />
+        <div class="about-me">
+            I am a 4th year software engineering student at Üsküdar University. I started my university life in Kırklareli, at Kırklareli University. Since I have lived in Istanbul since I was born and I could not adapt to the silence of Kırklareli, I completed my
+            1 year there and transferred to Üsküdar University in Istanbul with a horizontal transfer. After a year of English preparatory education, I continued my education from the 2nd grade. I am currently in the 4th grade and I did my summer internship
+            in the summer of 2021 at the company Receiving, in line with my school's mandatory requirement and my belief that work is learned on the job. During my internship, I learned about e-commerce sites and technologies. I developed MVC applications
+            and learned C#, JavaScript, HTML and CSS. Although my internship is over, I watch videos on Udemy and Youtube and reinforce what I have learned by doing small projects.
+        </div>
+    </div>
 
-    <br><br><br>
-    <h1> PROJECTS</h1>
-    <div id=github></div>
+
+
+    <div class="my-projects">
+        <div id=github></div>
+    </div>
+
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
