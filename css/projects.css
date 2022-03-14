@@ -22,6 +22,7 @@ body {
     }
     .card {
         width: 25% !important;
+        overflow: hidden !important;
     }
 }
 
