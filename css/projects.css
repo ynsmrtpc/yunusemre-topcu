@@ -18,6 +18,8 @@ body {
     .row {
         position: fixed;
         left: 0;
+    }
+    .card {
         width: 350px !important;
     }
 }
