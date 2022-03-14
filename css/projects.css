@@ -21,15 +21,6 @@ body {
     }
 }
 
-.btn {
-    color: #343434 !important;
-    padding: 0 5px !important;
-    margin: 5px !important;
-    float: right !important;
-    font-size: 18px !important;
-    border-radius: 5px !important;
-}
-
 .card {
     background: rgb(234, 234, 234, .3) !important;
     border: 1px solid #dd2476;
