@@ -3,7 +3,6 @@ apirepo = `https://api.github.com/users/${user}`
 
 listrepos = document.createElement('div');
 listrepos.className = 'container mx-auto mt-6'
-listrepos.idName = 'card-start';
 document.getElementById('github').appendChild(listrepos);
 rowDiv = document.createElement('div');
 rowDiv.className = 'row';
@@ -34,8 +33,7 @@ $.getJSON(apirepo + '/repos', function(data) {
 
         visit_a = document.createElement('a');
         visit_a.className = 'btn mr-2';
-        visit_a.innerHTML = '<i class="fas fa-link"></i>';
-        visit_a.textContent = 'Visit Site'
+        visit_a.innerHTML = '<i class="fas fa-link"></i>' + ' Visit Site';
         visit_a.href = `https://${projects.name}.netlify.app/`;
         visit_a.target = '_blank'
         visit_a.style = 'position:absolute; bottom:5px; left: 5px;'
@@ -43,8 +41,7 @@ $.getJSON(apirepo + '/repos', function(data) {
 
         github_a = document.createElement('a');
         github_a.className = 'btn';
-        github_a.innerHTML = '<i class="fas fa-github"></i>';
-        github_a.textContent = 'Github'
+        github_a.innerHTML = '<i class="fab fa-github"></i>' + ' Github';
         github_a.href = `${projects.html_url}`;
         github_a.target = '_blank'
         github_a.style = 'position:absolute; bottom:5px; right: 5px;'
