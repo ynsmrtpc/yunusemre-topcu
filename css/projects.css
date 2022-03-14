@@ -14,10 +14,11 @@ body {
     margin: 100px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 640px) {
     .row {
         position: fixed;
         left: 0;
+        width: 350px !important;
     }
 }
 
@@ -26,7 +27,7 @@ body {
     border: 1px solid #dd2476;
     color: rgba(250, 250, 250, 0.8);
     margin-bottom: 20px;
-    width: 450px !important;
+    width: 500px !important;
 }
 
 .btn {
