@@ -1,3 +1,9 @@
+* {
+    transition: all .5s !important;
+    text-decoration: none !important;
+    list-style: none !important;
+}
+
 :root {
     --font: "Inter", sans-serif;
     --size-quote: 95px;
@@ -12,6 +18,7 @@
     --light-blue: #20bdff;
     --opacity: 60%;
     --card-background: #26243b;
+    --gradient-white: linear-gradient(to left top, #fafafa 60%, #caeff1 40%) !important;
 }
 
 
