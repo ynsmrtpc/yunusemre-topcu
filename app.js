@@ -3,7 +3,7 @@ apirepo = `https://api.github.com/users/${user}`;
 
 listrepos = document.createElement('div');
 listrepos.className = 'container'
-document.getElementById('github').appendChild(listrepos);
+document.querySelector('#github').appendChild(listrepos);
 rowDiv = document.createElement('div');
 rowDiv.className = 'row';
 listrepos.appendChild(rowDiv);
@@ -45,3 +45,28 @@ $.getJSON(apirepo + '/repos', function(data) {
     });
 
 });
+
+$(document).ready(function() {
+    $('#dark-light').click(function(e) {
+        e.preventDefault();
+        // $('.mobile').style.background = '#fafafa !important';
+        // $('.mobile').style.color = '#343434 !important';
+        const dark = document.getElementById('mobile');
+        dark.style.background = '#fafafa';
+        dark.style.color = '#343434';
+        light = document.getElementById('dark-light');
+        light.innerHTML = '<i class="fa fa-sun"></i>';
+        $(document).ready(function() {
+            $('#dark-light').click(function(e) {
+                e.preventDefault();
+                // $('.mobile').style.background = '#fafafa !important';
+                // $('.mobile').style.color = '#343434 !important';
+                const dark = document.getElementById('mobile');
+                dark.style.background = '#343434 ';
+                dark.style.color = '#fafafa ';
+                light = document.getElementById('dark-light');
+                light.innerHTML = '<i class="fas fa-moon"></i>';
+            })
+        })
+    })
+})
