@@ -172,10 +172,13 @@
                 github_a = document.createElement('a');
                 github_a.className = 'btn'
                 github_a.style.display = 'block';
-                github_a.innerHTML = `${projects.name}`.toUpperCase();
+                github_a.innerHTML = `${projects.name}`.toUpperCase() + '<hr>';
                 github_a.href = `${projects.html_url}`;
                 github_a.target = '_blank'
                 listrepos.appendChild(github_a);
+
+
+
             });
 
         });
