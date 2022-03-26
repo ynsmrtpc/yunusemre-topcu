@@ -14,17 +14,7 @@ body {
     margin: 100px;
 }
 
-@media only screen and (max-width: 768px) {
-    .row {
-        position: absolute;
-        left: 0;
-        right: 0;
-    }
-    .card {
-        width: 25% !important;
-        overflow: hidden !important;
-    }
-}
+
 
 .card {
     background: rgb(234, 234, 234, .3) !important;
@@ -53,4 +43,16 @@ body {
     border: 5px solid #fff !important;
     box-shadow: #222 1px 0 10px;
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+    .row {
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+    .card {
+        width: 25% !important;
+        overflow: hidden !important;
+    }
 }
