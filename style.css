@@ -1,6 +1,8 @@
     @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
      :root {
         --gradient: linear-gradient(to left top, #FFA9BF 25%, #8483FF 75%);
+        --gradient-p1: linear-gradient(to left-top, #a90c8d 35%, #00d3a6 65%);
+        --gradient-p2: linear-gradient(to left-top, #a90c8d 45%, #00d3a6 55%);
     }
     
     * {
@@ -38,12 +40,12 @@
     
     #p2 {
         left: 100%;
-        background: var(--gradient) !important;
+        background: var(--gradient-p1) !important;
     }
     
     #p3 {
         left: 200%;
-        background: var(--gradient) !important;
+        background: var(--gradient-p2) !important;
     }
     /* #p4 {
     left: 300%;
