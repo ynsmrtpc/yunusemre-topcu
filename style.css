@@ -315,6 +315,7 @@
             }
             section {
                 display: block !important;
+                height: 100vh;
             }
             html,
             body,
@@ -332,8 +333,8 @@
                 margin-left: auto;
                 margin-right: auto;
                 border: 5px solid;
-                width: 150px;
-                height: 150px;
+                width: 100px;
+                height: 100px;
                 border-radius: 50%;
                 overflow: hidden;
                 box-shadow: -30px -20px 20px rgba(227, 135, 255, 0.3), 0px 40px 20px rgba(255, 219, 57, 0.3), 30px -20px 20px rgba(118, 255, 255, 0.22) !important;
@@ -349,10 +350,6 @@
                 backdrop-filter: blur(5px);
                 -webkit-backdrop-filter: blur(5px);
                 border: 1px solid rgba(255, 255, 255, 0.3);
-            }
-            section {
-                width: auto;
-                min-height: 940px;
             }
             .btn {
                 color: #fafafa !important;
@@ -371,7 +368,9 @@
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
-                font-size: 50px;
                 text-decoration: none !important;
+            }
+            .social-media a:hover {
+                color: var(--gradient);
             }
         }
