@@ -7,43 +7,23 @@ document.querySelector('#github').appendChild(listrepos);
 rowDiv = document.createElement('div');
 rowDiv.className = 'row';
 listrepos.appendChild(rowDiv);
+rowDiv.style = "padding: 15px ";
 
 $.getJSON(apirepo + '/repos', function(data) {
     console.log('data now', data)
 
     data.forEach(projects => {
-
-        cardDiv = document.createElement('div');
-        cardDiv.className = 'card';
-        cardDiv.style = 'width: 18rem;';
-        rowDiv.appendChild(cardDiv);
-
-        cardBodyDiv = document.createElement('div');
-        cardBodyDiv.className = 'card-body';
-        cardDiv.appendChild(cardBodyDiv);
-
-        h5 = document.createElement('h5');
-        h5.className = 'card-title';
-        h5.innerHTML = `${projects.name}`.toUpperCase() + '<br><br>';
-        cardBodyDiv.appendChild(h5);
-
-        visit_a = document.createElement('a');
-        visit_a.className = 'btn mr-2';
-        visit_a.innerHTML = '<i class="fas fa-link"></i>' + ' Visit Site';
-        visit_a.href = `https://${projects.name}.netlify.app/`;
-        visit_a.target = '_blank'
-        visit_a.style = 'position:absolute; bottom:5px; left: 5px;'
-        cardBodyDiv.appendChild(visit_a);
-
-        github_a = document.createElement('a');
-        github_a.className = 'btn';
-        github_a.innerHTML = '<i class="fab fa-github"></i>' + ' Github';
-        github_a.href = `${projects.html_url}`;
-        github_a.target = '_blank'
-        github_a.style = 'position:absolute; bottom:5px; right: 5px;'
-        cardBodyDiv.appendChild(github_a);
+        rowDiv.innerHTML +=
+ `
+<div class="card" style="width: 25%; background: transparent; opacity: .7; ">
+  <div class="card-body" style="width:100%;height:100%; ">
+    <h5 class="card-title">${projects.name}</h5>
+    <a class="btn" href="${projects.html_url}" target="_blank" class="card-link">Github</a>
+    <a class="btn" href="${projects.name}.netlify.app" class="card-link" target="_blank">Visit Site</a>
+  </div>
+</div>
+ `
     });
-
 });
 
 $(document).ready(function() {
