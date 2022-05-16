@@ -241,17 +241,9 @@
         
         .card {
             background: transparent !important;
-            border: 1px solid #dd2476;
             color: #fafafa;
-            margin-bottom: 20px !important;
+            margin-bottom: 10px !important;
         }
-        
-        .card-info {
-            background: rgb(234, 234, 234, .1) !important;
-            color: #fafafa;
-            margin: 5px;
-        }
-        
         .btn {
             border: none;
             border-image-slice: 1;
