@@ -238,12 +238,11 @@
         #github {
             margin-top: 5vh;
         }
-        
+
         .card {
-            background: transparent !important;
-            color: #fafafa;
-            margin-bottom: 10px !important;
+            margin-bottom:10px;
         }
+        
         .btn {
             border: none;
             border-image-slice: 1;
