@@ -240,10 +240,9 @@
         }
         
         .card {
-            background: rgb(234, 234, 234, .4) !important;
+            background: transparent !important;
             border: 1px solid #dd2476;
             color: #fafafa;
-            margin: 5px;
             margin-bottom: 20px !important;
         }
         
@@ -256,18 +255,14 @@
         .btn {
             border: none;
             border-image-slice: 1;
-            background: var(--gradient) !important;
-            background-clip: text;
-            -webkit-background-clip: text !important;
-            border-image-source: var(--gradient) !important;
             text-decoration: none;
+            color: #fafafa !important;
+            box-shadow: #202020 1px 0 1px;
         }
         
         .btn:hover,
         .btn:focus {
-            background-clip: text;
-            -webkit-background-clip: none !important;
-            -webkit-text-fill-color: #fff !important;
+            -webkit-text-fill-color: #fafafa !important;
             box-shadow: #222 1px 0 10px;
             text-decoration: underline;
         }
