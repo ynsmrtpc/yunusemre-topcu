@@ -20,7 +20,7 @@ $.getJSON(apirepo + '/repos', function(data) {
   <div class="card-body" style="width:100%;height:100%; ">
     <h6 class="card-title">${projectName}</h6>
     <a class="btn" href="${projects.html_url}" target="_blank" class="card-link">Github</a>
-    <a class="btn" href="${projects.name}.netlify.app" class="card-link" target="_blank">Visit Site</a> 
+<!--    <a class="btn" href="${projects.name}.netlify.app" class="card-link" target="_blank">Visit Site</a> -->
   </div>
 </div>
  `
