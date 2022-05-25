@@ -360,3 +360,13 @@
                 color: var(--gradient);
             }
         }
+
+        .cv a {
+            text-decoration: none;
+            color: #fafafa;
+        }
+
+        .cv a:hover{
+            text-decoration: none;
+            color: #fafafa;
+        }
